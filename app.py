@@ -46,6 +46,20 @@ def index():
     else:
         items = my_list.query.order_by(my_list.created).all()
         return render_template("index.html", items=items)
+    
+
+
+# Delete an Item
+@app.route("/delete/<int:id>")
+def delete(id:int):
+    delete_item = my_list.query.get_or_404(id)
+    try:
+        db.session.delete(delete_item)
+        db.session.commit()
+        return redirect("/")
+    except Exception as e:
+        return f"ERROR: {e}"
+
         
 
 
