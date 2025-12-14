@@ -9,7 +9,7 @@
     <div class="content">
         <h1>Grocery List</h1>
 
-        {% if items | length < 1%}
+        {% if items | length < 1 %}
         <h3>There are no items... Create one here!</h3>
         {% else %}
         <table>
@@ -27,7 +27,7 @@
                 <td>
                     <a href="/delete/{{item.id}}">Delete</a>
                     <br/>
-                    <a href="/update/{{item.id}}">Edit</a>
+                    <a href="/edit/{{item.id}}">Edit</a>
 
                 </td>
 
