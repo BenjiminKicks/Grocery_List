@@ -1,9 +1,104 @@
 
+/* Web pages main layout */
 body {
-    background-color: #FAFAFA;
-    font-family: 'Inter', sans-serif
+    font-family:'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+     'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
 }
 
-h1 {
+
+/* main backround */
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* heading */
+.content h1 {
     color: #1E1E1E;
 }
+
+/* text */
+.content h4 {
+    color: #2E7D32;
+}
+
+/* the tables dimensions */
+.content table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* table columns */
+.content tr, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content tr {
+    background-color: #FAFAFA;
+    color: #333;
+}
+
+/* Delete and Edit botton */
+.content a {
+    display: inline-block;
+    padding: 5px 23px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: #D32F2F;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color:brown;
+    }
+}
+
+
+/* Input and Add task */
+.content input {
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+
+/* Add task button */
+#btn_add {
+    background-color: #2E7D32;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+
+    &:hover {
+        background-color: #486856;
+    }
+
+}
+
+
+
+
+
+/*You only need 5 colors for an MVP:
+Background → #FAFAFA
+Text → #1E1E1E
+Primary action (green) → #2E7D32
+Neutral borders → #E0E0E0
+Danger → #D32F2F*/
